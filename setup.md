@@ -62,7 +62,7 @@ ls
 ```
 You should see the following:
 ```
-
+data-shell.zip
 ```
 
 Now, we are ready.
