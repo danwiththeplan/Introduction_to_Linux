@@ -10,7 +10,7 @@ Please see <https://danwiththeplan.github.io/Introduction_to_Linux/> for a rende
 [the lesson template documentation][lesson-example].
 
 This workshop is based on [Software Carpentry's shell-novice](https://github.com/swcarpentry/shell-novice),
-modified by [Dan Jones](dan.jones@plantandfood.co.nz).
+modified by [Dan Jones](dan.jones@plantandfood.co.nz) and [Brogan McGreal](@broganmcgreal).
 
 We thanks all contributors and maintainers of this lesson.
 
