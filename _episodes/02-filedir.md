@@ -54,19 +54,8 @@ $ pwd
 {: .output}
 
 Here,
-the computer's response is `/Users/nelle`,
-which is Nelle's **home directory**:
-
-> ## Home Directory Variation
->
-> The home directory path will look different on different operating systems.
-> On Linux it may look like `/home/nelle`,
-> and on Windows it will be similar to `C:\Documents and Settings\nelle` or
-> `C:\Users\nelle`.  
-> (Note that it may look slightly different for different versions of Windows.)
-> In future examples, we've used Mac output as the default - Linux and Windows
-> output may differ slightly, but should be generally similar.  
-{: .callout}
+the computer's response is `/home/your_user_name/intro-linux`,
+which is the subdirectory (`intro-linux`) that you created in your personal home directory (`/home/your_user_name`):
 
 To understand what a "home directory" is,
 let's have a look at how the file system as a whole is organized.  For the
