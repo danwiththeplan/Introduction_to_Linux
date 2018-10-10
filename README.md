@@ -2,14 +2,17 @@
  [![Slack Status](https://img.shields.io/badge/Slack_Channel-swc--shell-E01563.svg)](https://swcarpentry.slack.com/messages/C9X3XTHJ8) 
 
 
-shell-novice
+Powerplant Summit: Introduction to Linux
 ============
 
 An introduction to the Unix shell for people who have never used the command line before.
-Please see <https://swcarpentry.github.io/shell-novice/> for a rendered version of this material,
-[the lesson template documentation][lesson-example]
-for instructions on formatting, building, and submitting material,
-or run `make` in this directory for a list of helpful commands.
+Please see <https://danwiththeplan.github.io/Introduction_to_Linux/> for a rendered version of this material,
+[the lesson template documentation][lesson-example].
+
+This workshop is based on [Software Carpentry's shell-novice](https://github.com/swcarpentry/shell-novice),
+modified by [Dan Jones](dan.jones@plantandfood.co.nz).
+
+We thanks all contributors and maintainers of this lesson.
 
 Maintainers:
 
