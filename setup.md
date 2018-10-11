@@ -13,19 +13,24 @@ To begin the lesson, please follow these steps:
 subdirectory and copy some files into it. This involves some commands that we'll learn more about as the lesson progresses.
 So, don't worry if you don't quite know what you're doing here.
 
-Firstly, check that you really are in your personal home directory. Type the following into the CLI and press `ENTER`.
-
-```
-pwd
-```
-This is a Linux command that asks "what directory am I currently in" (or "**p**resent **w**orking **d**irectory" for short).
+> ## Firstly, check that you really are in your personal home directory.  
+> Type the following into the CLI and press `ENTER`.
+> 
+> ~~~
+> $ pwd
+> ~~~
+> {: .language-bash}
+> This is a Linux command that asks "what directory am I currently in" (or "**p**rint **w**orking **d**irectory" for short).
 Everyone will see a different output, because the personal home directory is named after your username, and everyone has a 
 different username. For me, the command would output the following:
+> ~~~
+> /home/hradxj
+> ~~~
+> {: .output}
+> 
+> ..because my PFR username is `hradxj`. 
+{: .callout}
 
-```
-/home/hradxj
-```
-..because my PFR username is `hradxj`.
 
 Now we need to create a new subdirectory, to put some test data into. Type the following into the CLI and press `ENTER`.
 
