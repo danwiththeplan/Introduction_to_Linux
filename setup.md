@@ -3,6 +3,37 @@ layout: page
 title: Setup
 root: .
 ---
+## Welcome to the powerPlant summit Introduction to Linux session.
+
+Let's start with some details on how to follow the lesson, how to ask for help, and some useful external resources.
+
+>It's important to acknowledge that this lesson was adapted from the [Software Carpentry shell-novice](http://swcarpentry.github.io/shell-novice/) lesson and that many people have contributed to development of this lesson, most of whom have nothing to do with PFR. If you are interested, maintainers and contributors are listed in the [github repository](https://github.com/danwiththeplan/Introduction_to_Linux).
+
+## How to follow the lesson
+
+The lesson mostly involves entering specific commands into the **C**ommand **L**ine **I**nterface (referred to as the **CLI** from now on). For most people the CLI will be the program **Putty**. 
+
+When you see a box with a purple band on the left, this is a *command* that you'll need to enter into the CLI.
+Here's an example (but don't enter this into the CLI right now):
+~~~
+somecommand
+~~~
+{: .language-bash}
+
+There are a few ways you can enter the command. 
+**First, you can simply type the command.** It should be entered *exactly as written*, including dots and spaces. It's important to note at this point that *Linux is case-specific*... so entering a `lowercase` command in `UPPERCASE` won't work. You'll learn some quicker and more useful ways to type commands as the lesson progresses.
+**Secondly, you can cut-and-paste the command.** This can be done in two ways:
+1) Highlight the text you wish to cut and paste, press `CTRL-C`, select the Putty window, and Right-click on your mouse.
+2) Highlight the text you wish to cut and paste, press `CTRL-C`, select the Putty window, and press `SHIFT-Insert`.
+
+When you see a box with a black band on the left, this is an *output* that you should expect to see in the CLI, usually after entering a *command*. Here's an example:
+
+~~~
+some expected output
+~~~
+{: .output}
+
+## How to ask for help
 
 To begin the lesson, please follow these steps:
 
