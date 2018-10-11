@@ -34,29 +34,46 @@ different username. For me, the command would output the following:
 ..because my PFR username is `hradxj`. 
 
 
-**Now let's copy the test data.. which is sitting in Dan's personal workspace.. into the `intro-linux` directory.**
+**Now let's copy the test data.. which is sitting in Dan's personal workspace.. into your personal home directory.**
 
 Type the following into the CLI and press `ENTER`.
 
 ```
-cp /workspace/hradxj/data-shell.zip .
+cp /workspace/hradxj/intro-linux.zip .
 ```
 {: .language-bash}
 
-Don't forget the dot at the end! 
-Now, check that you do have a file called `data-shell.zip` in your current directory.
-Type the following into the CLI and press `ENTER`.
+Don't forget the dot at the end!
+
+Now, type the following into the CLI and and press `ENTER`.
 
 ```
-ls
+unzip intro-linux.zip
 ```
 {: .language-bash}
 
-You should see the following:
+This command will `unzip` the file `intro-linux.zip`. You will see that the `unzip` program creates some new subdirectories, and inflates a lot of files within those subdirectories. These are the files you'll be working with this morning.
+
+Now, let's change directories, into the new directory that was created during the unzipping process. Type the following into the CLI and and press `ENTER`.
+
 ```
-data-shell.zip
+cd intro-linux
+```
+{: .language-bash}
+
+Now, let's check that we are in the correct directory. Type the following into the CLI and and press `ENTER`.
+
+```
+pwd
+```
+{: .language-bash}
+I would see the following:
+```
+/home/hradxj/intro-linux
 ```
 {: .output}
+
+In your case, it will be the same, except with your username.
 
 Now, we are ready.
 
