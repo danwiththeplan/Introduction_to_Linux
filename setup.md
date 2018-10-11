@@ -20,10 +20,14 @@ somecommand
 ~~~
 {: .language-bash}
 
-There are a few ways you can enter the command. 
+There are a few ways you can enter the command.
+
 **First, you can simply type the command.** It should be entered *exactly as written*, including dots and spaces. It's important to note at this point that *Linux is case-specific*... so entering a `lowercase` command in `UPPERCASE` won't work. You'll learn some quicker and more useful ways to type commands as the lesson progresses.
+
 **Secondly, you can cut-and-paste the command.** This can be done in two ways:
+
 1) Highlight the text you wish to cut and paste, press `CTRL-C`, select the Putty window, and Right-click on your mouse.
+
 2) Highlight the text you wish to cut and paste, press `CTRL-C`, select the Putty window, and press `SHIFT-Insert`.
 
 When you see a box with a black band on the left, this is an *output* that you should expect to see in the CLI, usually after entering a *command*. Here's an example:
