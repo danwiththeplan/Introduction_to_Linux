@@ -6,8 +6,7 @@ Powerplant Summit: Introduction to Linux
 ============
 
 An introduction to the Unix shell for people who have never used the command line before.
-Please see <https://danwiththeplan.github.io/Introduction_to_Linux/> for a rendered version of this material,
-[the lesson template documentation][lesson-example].
+Please see <https://danwiththeplan.github.io/Introduction_to_Linux/> for a rendered version of this material.
 
 This workshop is based on [Software Carpentry's shell-novice](https://github.com/swcarpentry/shell-novice),
 modified by [Dan Jones](dan.jones@plantandfood.co.nz) and [Brogan McGreal](@broganmcgreal).
