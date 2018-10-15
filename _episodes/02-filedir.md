@@ -49,7 +49,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle
+/home/hradxj/intro-linux
 ~~~
 {: .output}
 
@@ -64,26 +64,45 @@ illustrating the filesystem on our scientist Nelle's computer.  After this
 illustration, you'll be learning commands to explore your own filesystem,
 which will be constructed in a similar way, but not be exactly identical.  
 
-On Nelle's computer, the filesystem looks like this:
+On powerPlant, you can see the entire filesystem by typing:
+~~~
+$ ls /
+~~~
+{: .language-bash}
 
-![The File System](../fig/filesystem.svg)
-
-At the top is the **root directory**
+This means "look at everything in the **root directory**
 that holds everything else.
-We refer to it using a slash character, `/`, on its own;
-this is the leading slash in `/Users/nelle`.
+We refer to it using a slash character, `/`, on its own. You'll see this:
+~~~
+bin     etc    lib64       mnt          powerplant  sbin      ta     var
+boot    home   localhome   oldsoftware  proc        software  tmp    workspace
+dev     input  lost+found  opt          root        srv       Users
+docker  lib    media       output       run         sys       usr
+~~~
+{: .output}
 
-Inside that directory are several other directories:
-`bin` (which is where some built-in programs are stored),
-`data` (for miscellaneous data files),
-`Users` (where users' personal directories are located),
-`tmp` (for temporary files that don't need to be stored long-term),
-and so on.  
+In powerPlant, the most relevant directories are:
 
-We know that our current working directory `/Users/nelle` is stored inside `/Users`
-because `/Users` is the first part of its name.
+`/input`
+
+This is where raw, input data (for example from a sequencing facility) is stored.
+You won't normally be able to change the data in `/input`, and the data will usually be compressed.
+All you can do is make a copy of the data.
+
+`/workspace`
+
+This is where you have a fairly large amount of space to work with, and where you'd do your work.
+
+`/output` 
+
+This is where you would put data that's "finished", i.e. you've done some analysis on it and it's ready for publication or viewing.
+You'll get more detail on this in the **Introduction to powerPlant** session.
+
+
+We know that our current working directory `/home/hradxj/` is stored inside `/home`
+because `/home` is the first part of its name.
 Similarly,
-we know that `/Users` is stored inside the root directory `/`
+we know that `/home` is stored inside the root directory `/`
 because its name begins with `/`.
 
 > ## Slashes
@@ -94,18 +113,6 @@ because its name begins with `/`.
 > it's just a separator.
 {: .callout}
 
-Underneath `/Users`,
-we find one directory for each user with an account on Nelle's machine,
-her colleagues the Mummy and Wolfman.  
-
-![Home Directories](../fig/home-directories.svg)
-
-The Mummy's files are stored in `/Users/imhotep`,
-Wolfman's in `/Users/larry`,
-and Nelle's in `/Users/nelle`.  Because Nelle is the user in our
-examples here, this is why we get `/Users/nelle` as our home directory.  
-Typically, when you open a new command prompt you will be in
-your home directory to start.  
 
 Now let's learn the command that will let us see the contents of our
 own filesystem.  We can see what's in our home directory by running `ls`,
@@ -117,8 +124,8 @@ $ ls
 {: .language-bash}
 
 ~~~
-Applications Documents    Library      Music        Public
-Desktop      Downloads    Movies       Pictures
+creatures  molecules           notes.txt  solar.pdf
+data       north-pacific-gyre  pizza.cfg  writing
 ~~~
 {: .output}
 
@@ -140,8 +147,8 @@ $ ls -F
 {: .language-bash}
 
 ~~~
-Applications/ Documents/    Library/      Music/        Public/
-Desktop/      Downloads/    Movies/       Pictures/
+creatures/  molecules/           notes.txt  solar.pdf
+data/       north-pacific-gyre/  pizza.cfg  writing/
 ~~~
 {: .output}
 
@@ -394,19 +401,18 @@ The argument `Desktop` tells `ls` that
 we want a listing of something other than our current working directory:
 
 ~~~
-$ ls -F Desktop
+$ ls -F data
 ~~~
 {: .language-bash}
 
 ~~~
-data-shell/
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+animal-counts/   elements/    pdb/       salmon.txt
 ~~~
 {: .output}
 
 Your output should be a list of all the files and sub-directories on your
-Desktop, including the `data-shell` directory you downloaded at
-the [setup for this lesson]({{ page.root }}{% link setup.md %}).  Take a look at your Desktop to confirm that
-your output is accurate.  
+"data" directory.  
 
 As you may now see, using a bash shell is strongly dependent on the idea that
 your files are organized in a hierarchical file system.
@@ -415,50 +421,30 @@ it's possible to put hundreds of files in our home directory,
 just as it's possible to pile hundreds of printed papers on our desk,
 but it's a self-defeating strategy.
 
-Now that we know the `data-shell` directory is located on our Desktop, we
-can do two things.  
-
-First, we can look at its contents, using the same strategy as before, passing
-a directory name to `ls`:
-
-~~~
-$ ls -F Desktop/data-shell
-~~~
-{: .language-bash}
-
-~~~
-creatures/          molecules/          notes.txt           solar.pdf
-data/               north-pacific-gyre/ pizza.cfg           writing/
-~~~
-{: .output}
-
-Second, we can actually change our location to a different directory, so
-we are no longer located in
-our home directory.  
+We can change our location to a different directory.  
 
 The command to change locations is `cd` followed by a
 directory name to change our working directory.
-`cd` stands for "change directory",
-which is a bit misleading:
-the command doesn't change the directory,
-it changes the shell's idea of what directory we are in.
+
+`cd` by itself will take you back to your home directory within powerPlant.
+
 
 Let's say we want to move to the `data` directory we saw above.  We can
-use the following series of commands to get there:
+use the following series of command to get there:
 
 ~~~
-$ cd Desktop
-$ cd data-shell
+$ cd 
+$ cd intro-linux
 $ cd data
 ~~~
 {: .language-bash}
 
-These commands will move us from our home directory onto our Desktop, then into
-the `data-shell` directory, then into the `data` directory.  `cd` doesn't print anything,
+These commands will move us to our home directory, then into
+the `intro-linux` directory, then into the `data` directory.  `cd` doesn't print anything,
 but if we run `pwd` after it, we can see that we are now
-in `/Users/nelle/Desktop/data-shell/data`.
+in `/home/hradxj/intro-linux/data`.
 If we run `ls` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/data-shell/data`,
+it lists the contents of `/home/hradxj/intro-linux/data`,
 because that's where we now are:
 
 ~~~
@@ -467,7 +453,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/data
+/home/hradxj/intro-linux/data
 ~~~
 {: .output}
 
@@ -486,12 +472,12 @@ We now know how to go down the directory tree, but
 how do we go up?  We might try the following:
 
 ~~~
-$ cd data-shell
+$ cd intro-linux
 ~~~
 {: .language-bash}
 
 ~~~
--bash: cd: data-shell: No such file or directory
+-bash: cd: intro-linux: No such file or directory
 ~~~
 {: .error}
 
@@ -515,7 +501,7 @@ $ cd ..
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
-if we run `pwd` after running `cd ..`, we're back in `/Users/nelle/Desktop/data-shell`:
+if we run `pwd` after running `cd ..`, we're back in `intro-linux`:
 
 ~~~
 $ pwd
@@ -523,7 +509,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/home/hradxj/intro-linux
 ~~~
 {: .output}
 
@@ -536,8 +522,8 @@ $ ls -F -a
 {: .language-bash}
 
 ~~~
-./   .bash_profile  data/       north-pacific-gyre/  pizza.cfg  thesis/
-../  creatures/     molecules/  notes.txt            solar.pdf  writing/
+./   .bash_profile  data/       north-pacific-gyre/  pizza.cfg  writing/
+../  creatures/     molecules/  notes.txt            solar.pdf
 ~~~
 {: .output}
 
@@ -570,8 +556,8 @@ equivalent to `ls -Fa`.
 > The special names `.` and `..` don't belong to `cd`;
 > they are interpreted the same way by every program.
 > For example,
-> if we are in `/Users/nelle/data`,
-> the command `ls ..` will give us a listing of `/Users/nelle`.
+> if we are in `/home/hradxj/intro-linux/data`,
+> the command `ls ..` will give us a listing of `/home/hradxj/intro-linux`.
 > When the meanings of the parts are the same no matter how they're combined,
 > programmers say they are **orthogonal**:
 > Orthogonal systems tend to be easier for people to learn
@@ -596,7 +582,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle
+/home/hradxj/
 ~~~
 {: .output}
 
@@ -608,7 +594,7 @@ three commands, but we can actually string together the list of directories
 to move to `data` in one step:
 
 ~~~
-$ cd Desktop/data-shell/data
+$ cd /home/hradxj/intro-linux/data
 ~~~
 {: .language-bash}
 
@@ -629,10 +615,10 @@ leading slash.  The leading `/` tells the computer to follow the path from
 the root of the file system, so it always refers to exactly one directory,
 no matter where we are when we run the command.
 
-This allows us to move to our `data-shell` directory from anywhere on
+This allows us to move to our `intro-linux` directory from anywhere on
 the filesystem (including from inside `data`).  To find the absolute path
 we're looking for, we can use `pwd` and then extract the piece we need
-to move to `data-shell`.  
+to move to `intro-linux`.  
 
 ~~~
 $ pwd
@@ -640,12 +626,12 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/data
+/home/hradxj/intro-linux/data
 ~~~
 {: .output}
 
 ~~~
-$ cd /Users/nelle/Desktop/data-shell
+$ cd /home/hradxj/intro-linux
 ~~~
 {: .language-bash}
 
@@ -655,9 +641,9 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 >
 > The shell interprets the character `~` (tilde) at the start of a path to
 > mean "the current user's home directory". For example, if Nelle's home
-> directory is `/Users/nelle`, then `~/data` is equivalent to
-> `/Users/nelle/data`. This only works if it is the first character in the
-> path: `here/there/~/elsewhere` is *not* `here/there/Users/nelle/elsewhere`.
+> directory is `/home/hradxj`, then `~/data` is equivalent to
+> `/home/hradxj/data`. This only works if it is the first character in the
+> path: `here/there/~/elsewhere` is *not* `here/there/home/hradxj/data/elsewhere`.
 >
 > Another shortcut is the `-` (dash) character.  `cd` will translate `-` into
 > *the previous directory I was in*, which is faster than having to remember,
