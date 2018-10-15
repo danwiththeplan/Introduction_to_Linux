@@ -288,7 +288,7 @@ the output of `head` must be the file with the fewest lines.
 > We have already met the `head` command, which prints lines from the start of a file.
 > `tail` is similar, but prints lines from the end of a file instead.
 >
-> Consider the file `data-shell/data/animals.txt`.
+> Consider the file `intro-linux/data/animals.txt`.
 > After these commands, select the answer that
 > corresponds to the file `animalsUpd.txt`:
 >
@@ -389,7 +389,7 @@ the calculation is "head of sort of line count of `*.pdb`".
 > > The pipe character `|` is used to feed the standard output from one process to
 > > the standard input of another.
 > > `>` is used to redirect standard output to a file.
-> > Try it in the `data-shell/molecules` directory!
+> > Try it in the `intro-linux/molecules` directory!
 > {: .solution}
 {: .challenge}
 
@@ -469,7 +469,7 @@ so that you and other people can put those programs into pipes to multiply their
 
 > ## What Does `<` Mean?
 >
-> Change directory to `data-shell` (the top level of our downloaded example data).
+> Change directory to `intro-linux` (the top level of our downloaded example data).
 >
 > What is the difference between:
 >
@@ -517,7 +517,7 @@ so that you and other people can put those programs into pipes to multiply their
 > ## Why Does `uniq` Only Remove Adjacent Duplicates?
 >
 > The command `uniq` removes adjacent duplicated lines from its input.
-> For example, the file `data-shell/data/salmon.txt` contains:
+> For example, the file `intro-linux/data/salmon.txt` contains:
 >
 > ~~~
 > coho
@@ -529,7 +529,7 @@ so that you and other people can put those programs into pipes to multiply their
 > ~~~
 > {: .source}
 >
-> Running the command `uniq salmon.txt` from the `data-shell/data` directory produces:
+> Running the command `uniq salmon.txt` from the `intro-linux/data` directory produces:
 >
 > ~~~
 > coho
@@ -553,7 +553,7 @@ so that you and other people can put those programs into pipes to multiply their
 
 > ## Pipe Reading Comprehension
 >
-> A file called `animals.txt` (in the `data-shell/data` folder) contains the following data:
+> A file called `animals.txt` (in the `intro-linux/data` folder) contains the following data:
 >
 > ~~~
 > 2012-11-05,deer
@@ -639,7 +639,7 @@ so that you and other people can put those programs into pipes to multiply their
 > ~~~
 > {: .output}
 >
-> Assuming your current directory is `data-shell/data/`,
+> Assuming your current directory is `intro-linux/data/`,
 > what command would you use to produce a table that shows
 > the total count of each type of animal in the file?
 >
@@ -653,7 +653,7 @@ so that you and other people can put those programs into pipes to multiply their
 > > ## Solution
 > > Option 5. is the correct answer.
 > > If you have difficulty understanding why, try running the commands, or sub-sections of
-> > the pipelines (make sure you are in the `data-shell/data` directory).
+> > the pipelines (make sure you are in the `intro-linux/data` directory).
 > {: .solution}
 {: .challenge}
 
@@ -754,7 +754,7 @@ so this matches all the valid data files she has.
 > Wildcard expressions can be very complex, but you can sometimes write
 > them in ways that only use simple syntax, at the expense of being a bit
 > more verbose.  
-> Consider the directory `data-shell/north-pacific-gyre/2012-07-03` :
+> Consider the directory `intro-linux/north-pacific-gyre/2012-07-03` :
 > the wildcard expression `*[AB].txt`
 > matches all files ending in `A.txt` or `B.txt`. Imagine you forgot about
 > this.
