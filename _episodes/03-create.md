@@ -32,7 +32,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/home/hradxj/intro-linux
 ~~~
 {: .output}
 
@@ -228,7 +228,7 @@ draft.txt
 > {: .solution}
 {: .challenge}
 
-Returning to the `data-shell` directory,
+Returning to the `intro-linux` directory,
 let's tidy up the `thesis` directory by removing the draft we created:
 
 ~~~
@@ -259,7 +259,7 @@ $ ls
 {: .callout}
 
 Let's re-create that file
-and then move up one directory to `/Users/nelle/Desktop/data-shell` using `cd ..`:
+and then move up one directory to `/home/hradxj/intro-linux` using `cd ..`:
 
 ~~~
 $ pwd
@@ -267,7 +267,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/thesis
+/home/hradxj/intro-linux/thesis
 ~~~
 {: .output}
 
@@ -355,7 +355,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/home/hradxj/intro-linux
 ~~~
 {: .output}
 
