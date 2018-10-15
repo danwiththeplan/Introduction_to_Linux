@@ -766,7 +766,7 @@ Since the assay machine's output is plain text,
 she will call her files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
 All 1520 files will go into the same directory.
 
-Now in her current directory `data-shell`,
+Now in her current directory `intro-linux`,
 Nelle can see what files she has using the command:
 
 ~~~
