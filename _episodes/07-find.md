@@ -33,7 +33,7 @@ we're going to be working in the writing subdirectory:
 
 ~~~
 $ cd
-$ cd Desktop/data-shell/writing
+$ cd intro-linux/writing
 $ cat haiku.txt
 ~~~
 {: .language-bash}
@@ -320,7 +320,7 @@ Miscellaneous:
 > Hint: use `man grep` to look for how to grep text recursively in a directory
 > and `man cut` to select more than one field in a line.
 >
-> An example of such a file is provided in `data-shell/data/animal-counts/animals.txt`
+> An example of such a file is provided in `intro-linux/data/animal-counts/animals.txt`
 >
 > > ## Solution
 > >
@@ -345,7 +345,7 @@ Miscellaneous:
 > book, Jo, Meg, Beth, and Amy, your friend thinks that Jo was the
 > most mentioned.  You, however, are certain it was Amy.  Luckily, you
 > have a file `LittleWomen.txt` containing the full text of the novel
-> (`data-shell/writing/data/LittleWomen.txt`).
+> (`intro-linux/writing/data/LittleWomen.txt`).
 > Using a `for` loop, how would you tabulate the number of times each
 > of the four sisters is mentioned?
 >
