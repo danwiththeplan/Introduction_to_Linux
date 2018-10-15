@@ -13,10 +13,10 @@ Let's start with some details on how to follow the lesson, how to ask for help, 
 
 The lesson mostly involves entering specific commands into the **C**ommand **L**ine **I**nterface (referred to as the **CLI** from now on). For most people the CLI will be the program **Putty**. 
 
-When you see a box with a purple band on the left, this is a *command* that you'll need to enter into the CLI.
+When you see a box with a purple band on the left, this is a *command* that you'll need to enter into the CLI. The *command* is the bit after the *prompt* (which in this case is a `$`). 
 Here's an example (but don't enter this into the CLI right now):
 ~~~
-somecommand
+$ somecommand
 ~~~
 {: .language-bash}
 
@@ -58,7 +58,7 @@ So, don't worry if you don't quite know what you're doing here.
 Type the following into the CLI and press `ENTER`.
 
 ~~~
-pwd
+$ pwd
 ~~~
 {: .language-bash}
 
@@ -79,7 +79,7 @@ different username. For me, the command would output the following:
 Type the following into the CLI and press `ENTER`.
 
 ```
-cp /workspace/hradxj/intro-linux.zip .
+$ cp /workspace/hradxj/intro-linux.zip .
 ```
 {: .language-bash}
 
@@ -88,7 +88,7 @@ Don't forget the dot at the end!
 Now, type the following into the CLI and and press `ENTER`.
 
 ```
-unzip intro-linux.zip
+$ unzip intro-linux.zip
 ```
 {: .language-bash}
 
@@ -97,14 +97,14 @@ This command will `unzip` the file `intro-linux.zip`. You will see that the `unz
 Now, let's change directories, into the new directory that was created during the unzipping process. Type the following into the CLI and and press `ENTER`.
 
 ```
-cd intro-linux
+$ cd intro-linux
 ```
 {: .language-bash}
 
 Now, let's check that we are in the correct directory. Type the following into the CLI and and press `ENTER`.
 
 ```
-pwd
+$ pwd
 ```
 {: .language-bash}
 I would see the following:
@@ -115,7 +115,7 @@ I would see the following:
 
 In your case, it will be the same, except with your username.
 
-Now, we are ready.
+Now, we are ready. Please put up a green sticker if you've got to this point.
 
 > #### Reference
 > * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
