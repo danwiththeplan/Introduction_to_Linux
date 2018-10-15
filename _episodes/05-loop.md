@@ -115,7 +115,7 @@ name: `$filename` is equivalent to `${filename}`, but is different from
 
 > ## Variables in Loops
 >
-> This exercise refers to the `data-shell/molecules` directory.
+> This exercise refers to the `intro-linux/molecules` directory.
 > `ls` gives the following output:
 >
 > ~~~
@@ -208,7 +208,7 @@ name: `$filename` is equivalent to `${filename}`, but is different from
 > the shell to redirect output or get the value of a variable.
 {: .callout}
 
-Returning to our example in the `data-shell/creatures` directory,
+Returning to our example in the `intro-linux/creatures` directory,
 we have called the variable in this loop `filename`
 in order to make its purpose clearer to human readers.
 The shell itself doesn't care what the variable is called;
@@ -240,7 +240,7 @@ increase the odds that the program won't do what its readers think it does.
 
 > ## Limiting Sets of Files
 >
-> What would be the output of running the following loop in the `data-shell/molecules` directory?
+> What would be the output of running the following loop in the `intro-linux/molecules` directory?
 >
 > ~~~
 > $ for filename in c*
@@ -282,7 +282,7 @@ increase the odds that the program won't do what its readers think it does.
 > {: .solution}
 {: .challenge}
 
-Let's continue with our example in the `data-shell/creatures` directory.
+Let's continue with our example in the `intro-linux/creatures` directory.
 Here's a slightly more complicated loop:
 
 ~~~
@@ -580,7 +580,7 @@ so she decides to get some coffee and catch up on her reading.
 
 > ## Saving to a File in a Loop - Part One
 >
-> In the `data-shell/molecules` directory, what is the effect of this loop?
+> In the `intro-linux/molecules` directory, what is the effect of this loop?
 >
 > ~~~
 > $ for alkanes in *.pdb
@@ -608,7 +608,7 @@ so she decides to get some coffee and catch up on her reading.
 
 > ## Saving to a File in a Loop - Part Two
 >
-> Also in the `data-shell/molecules` directory, what would be the output of the following loop?
+> Also in the `intro-linux/molecules` directory, what would be the output of the following loop?
 >
 > ~~~
 > $ for datafile in *.pdb
