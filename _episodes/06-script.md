@@ -287,7 +287,7 @@ $ bash sorted.sh *.pdb ../creatures/*.dat
 > ~~~
 > {: .source}
 >
-> An example of this type of file is given in `data-shell/data/animal-counts/animals.txt`.
+> An example of this type of file is given in `intro-linux/data/animal-counts/animals.txt`.
 > 
 > Write a shell script called `species.sh` that takes any number of
 > filenames as command-line arguments, and uses `cut`, `sort`, and
@@ -528,7 +528,7 @@ Of course, this introduces another tradeoff between flexibility and complexity.
 
 > ## Script Reading Comprehension
 >
-> For this question, consider the `data-shell/molecules` directory once again.
+> For this question, consider the `intro-linux/molecules` directory once again.
 > This contains a number of `.pdb` files in addition to any other files you
 > may have created.
 > Explain what a script called `example.sh` would do when run as
